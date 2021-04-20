@@ -8,7 +8,8 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
     <title>Digital Archive</title>
 
 </head>
@@ -18,55 +19,122 @@
     </div>
     <div id="subheader">
        Catholicism & Music
+       
     </div>
+    <div id="button-div">
+
+    <button type="button" class="btn btn-default down-button" onclick="scrollDown()">
+        <i class="fa fa-chevron-down"></i>
+      </button>
+    </div>
+
     </div>
 <body>
     
     <div id="content">
     </div>
+    <div id="small-spacer">    </div>
     <div id="c">
     <iframe src="https://open.spotify.com/embed/playlist/5ptmpsm2a0619TglNLiaqi" frameborder="0" padding-top="100px" display="inline" id="playlist" allowtransparency="true" allow="encrypted-media"></iframe>
     <div class="image">
-    <img src="pictures/alejandro.jpg" id="image-inner">
+    <img src="pictures/alejandro.jpg" class="image-inner">
+    </div>
     </div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wagn8Wrmzuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
-        Here is a lot of content
-        <br>
+    <!-- Gallery -->
+    <div id="gallery-container">
+
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <div class="photo-container">
+        <div class="hovereffect">
+      <img
+        src="pictures/judas.jpg"
+        class="w-100 shadow-1-strong rounded mb-4 img-responsive"
+        alt=""
+      />
+      <div class="overlay">
+        <a class="info" href="#" onclick="console.log('logged'); return false">Jesus Portrayals</a>
+      </div>
     </div>
+</div>
+<div class="photo-container">
+    <div class="hovereffect">
+        <img
+        src="pictures/red_carpet.jpeg"
+        class="w-100 shadow-1-strong rounded mb-4 img-responsive"
+        alt=""
+      />
+  <div class="overlay">
+    <a class="info" href="#" onclick="console.log('logged'); return false">Fashion</a>
+  </div>
+</div>
+</div>
+
+    </div>
+    <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="photo-container">
+            <div class="hovereffect">
+                <img
+                src="pictures/judas3.jpg"
+                class="w-100 shadow-1-strong rounded mb-4 img-responsive"
+                alt=""
+              />
+          <div class="overlay">
+            <a class="info" href="#" onclick="console.log('logged'); return false">Sacred Heart</a>
+          </div>
+        </div>
+        </div>
+        <div class="photo-container">
+            <div class="hovereffect">
+                <img
+                src="pictures/judas2.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4 img-responsive"
+                alt=""
+              />
+          <div class="overlay">
+            <a class="info" href="#" onclick="console.log('logged'); return false">More Judas & Fashion</a>
+          </div>
+        </div>
+        </div>
+  
+
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="photo-container">
+            <div class="hovereffect">
+                <img
+                src="pictures/alejandro2.jpg"
+                class="w-100 shadow-1-strong rounded mb-4 img-responsive"
+                alt=""
+              />
+          <div class="overlay">
+            <a class="info" href="#" onclick="console.log('logged'); return false">Catholicism & Sexuality</a>
+          </div>
+        </div>
+        </div>
+        <div class="photo-container">
+            <div class="hovereffect">
+                <img
+                src="pictures/fan.jpg"
+                class="w-100 shadow-1-strong rounded mb-4 img-responsive"
+                alt=""
+              />
+          <div class="overlay">
+            <a class="info" href="#" onclick="console.log('logged'); return false">Lady Gaga as God</a>
+          </div>
+        </div>
+        </div>
+
+  
+  
+    </div>
+  </div>
+  <!-- Gallery -->
+</div>
+    
 
 </body>
 <script
