@@ -2,12 +2,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("header").style.paddingTop = "10px";
+    document.getElementById("header").style.paddingTop = "5px";
     document.getElementById("title").style.padding = "10px 10px";
     document.getElementById("title").style.height = "auto";
     document.getElementById("header").style.fontSize = "30px";
-    document.getElementById("title").style.paddingBottom = "5px"
-    document.getElementById("button-div").style.display = "none"
+    document.getElementById("title").style.paddingBottom = "5px";
+    document.getElementById("button-div").style.display = "none";
+    document.getElementById("subheader").style.display = "none";
+    document.getElementById("menu").style.display = "inline-block";
 
 
     // let playlistDiv = document.createElement("div")
@@ -22,6 +24,8 @@ function scrollFunction() {
     document.getElementById("header").style.fontSize = "100px";
     document.getElementById("title").style.height = "100%";
     document.getElementById("button-div").style.display = "block"
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("subheader").style.display = "inline-block";
     // let playListDiv = document.getElementById("playlistHeaderID");
     // if(playListDiv != null) {
     //     document.getElementById("title").removeChild(playListDiv);
