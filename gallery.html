@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="smooth_scroll.css">
     <title>Digital Archive</title>
 
 </head>
@@ -29,9 +30,60 @@
 </div>
 
 <body>
+    <div class="gallery-spacer"></div>
+    <div id="gallery-intro">
+
+    </div>
+    <!-- https://www.bootdey.com/snippets/view/simple-horizontal-timeline -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">        
+                        <div class="hori-timeline">
+                            <ul class="list-inline events">
+                                <li class="list-inline-item event-list list-card">
+                                    <a href="#performance">
+                                    <div class="px-4">
+                                        <h5 class="font-size-14">Catholicism in Performance</h5>
+                                        <p class="text-muted">Lady Gaga's music videos and live performances are visually excessive, eye-catching, and often overtly religious in symbolism.</p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="list-inline-item event-list list-card" id="controversy">
+                                    <div class="px-4">
+                                        <h5 class="font-size-16">Controversy</h5>
+                                        <p class="text-muted">This use of religious symbols in secular and occcasionally sexual contexts has generated significant public and religious controversy.</p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list list-card">
+                                    <a href="#personal">
+                                    <div class="px-4">
+                                        <h5 class="font-size-16">Personal Faith & Religious Reactions</h5>
+                                        <p class="text-muted">A self-identified Catholic, Lady Gaga is open about her faith beyond her public persona.</p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
+        </div>
 
     <!-- Gallery -->
-    <div id="gallery-container">
+    <div class="subheading-spacer" id="performance"></div>
+    <div class="gallery-subheading">
+        Catholicism in Performance
+    </div>
+    <div class="gallery-container">
 
         <div class="row">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -93,19 +145,6 @@
                     </div>
                 </div>
                 <div class="photo-container">
-                    <img src="pictures/priest.jpg" class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg"
-                        alt="" id="img10" />
-                    <div id="caption10" class="caption-text">
-                        <div class="caption-header">The Institution of Relgion</div>
-                        "Don't say I hate institutionalised religion – rather than saying I hate those things, which I
-                        do not, what I'm saying is that perhaps there is a way of opening more doors, rather than
-                        closing so many." -Lady Gaga Quoted in 2011 The Guardian interview
-                    </div>
-                    <div class="caption-text" id="caption10">
-                        <span>The Clergy</span>
-                    </div>
-                </div>
-                <div class="photo-container">
                     <img src="pictures/bad_romance.jpg" class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg"
                         alt="" id="img9" />
                     <div class="caption-text" id="caption9">
@@ -141,20 +180,107 @@
                         [More Analysis to Come]
                     </div>
                 </div>
+
+
+
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="photo-container">
-                    <img src="pictures/dalai lama.jpg" class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg"
-                        alt="" id="img7" />
-                    <div class="caption-text" id="caption7">
-                        <div class="caption-header">Dalai Lama</div>
-                        [Analysis to come]
+                    <img id="img5" src="pictures/alejandro2.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg" alt="" />
+                    <div class="caption-text" id="caption5">
+                        <div class="caption-header">Catholicism & Sexuality</div>
+                        <div>
+                            [Analysis to come]
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/niqrrmev4mA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
+
+                <div class="photo-container">
+                    <img id="img8" src="pictures/rosary.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg" alt="" />
+                    <div class="caption-text" id="caption8">
+                        <div class="caption-header">The Rosary & Public Backlash</div>
+                        [Analysis to come regarding "Alejandro" music video and intersection of religious symbols and sexuality]
+                       <br>
+                       <br>
+                        <img src="pictures/rosary_gif.gif">
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <img id="img12" src="pictures/judas_gif.gif"
+                        class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg" alt="" />
+                    <div class="caption-text" id="caption12">
+                        <div class="caption-header">Performance & Religion</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption">Image Text</div>
+        </div>
+    </div>
+
+
+    <div class="subheading-spacer" id="personal"></div>
+    <div class="gallery-subheading">
+        Personal Faith & Religious Reactions
+    </div>
+    <!-- Gallery -->
+    <div class="gallery-container">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="photo-container">
+                    <img src="pictures/priest.jpg" class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg"
+                        alt="" id="img10" />
+                    <div id="caption10" class="caption-text">
+                        <div class="caption-header">The Institution of Relgion</div>
+                        "Don't say I hate institutionalised religion – rather than saying I hate those things, which I
+                        do not, what I'm saying is that perhaps there is a way of opening more doors, rather than
+                        closing so many." -Lady Gaga Quoted in 2011 The Guardian interview
+                    </div>
+                    <div class="caption-text" id="caption10">
+                        <span>The Clergy</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="photo-container">
                     <img src="pictures/prayer.jpg" class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg"
                         alt="" id="img11" />
                     <div class="caption-text" id="caption11">
                         <div class="caption-header">Personal Relationship with Prayer</div>
                         This section will focus on Lady Gaga's personal relationship with her religion as expressed in interviews and social media. 
+                    </div>
+                </div>
+                <div class="photo-container">
+                    <img src="pictures/dalai lama.jpg" class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg"
+                        alt="" id="img7" />
+                    <div class="caption-text" id="caption7">
+                        <div class="caption-header">Dalai Lama</div>
+                        [Analysis to come]
                     </div>
                 </div>
 
@@ -192,44 +318,12 @@
                         [More Analysis to come]
                     </div>
                 </div>
-                <div class="photo-container">
-                    <img id="img8" src="pictures/rosary.jpg"
-                        class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg" alt="" />
-                    <div class="caption-text" id="caption8">
-                        <div class="caption-header">The Rosary & Public Backlash</div>
-                        [Analysis to come regarding "Alejandro" music video and intersection of religious symbols and sexuality]
-                       <br>
-                       <br>
-                        <img src="pictures/rosary_gif.gif">
-                    </div>
-                </div>
-                <div class="photo-container">
-                    <img id="img12" src="pictures/judas_gif.gif"
-                        class="w-100 shadow-1-strong rounded mb-4 img-responsive myImg" alt="" />
-                    <div class="caption-text" id="caption12">
-                        <div class="caption-header">Performance & Religion</div>
-                    </div>
-                </div>
 
 
 
             </div>
         </div>
         <!-- Gallery -->
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
-
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption">Image Text</div>
-        </div>
-    </div>
 
 
 </body>
