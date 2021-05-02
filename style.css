@@ -269,7 +269,7 @@ body {
         background-color: white;
         color: black;
         border-radius: 8px;
-        padding: 10px 10px;
+        padding: 20px 30px;
         height: auto;
 
       }
@@ -290,8 +290,7 @@ body {
         top: 100px;
         right: 35px;
         color: white;
-        font-size: 40px;
-        font-weight: bold;
+        font-size: 50px;
         transition: 0.3s;
       }
       
@@ -378,6 +377,14 @@ body {
     }
 
     #menu a:hover {
+        text-decoration: underline;
+    }
+
+    .mini-link {
+        color: #BB0000;
+    }
+
+    .mini-link:hover {
         text-decoration: underline;
     }
 

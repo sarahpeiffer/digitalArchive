@@ -2,7 +2,7 @@
 
 var modal = document.getElementById("myModal");
 
-for(let i =  1; i < 13; i++) {
+for(let i =  1; i < 23; i++) {
     var img = document.getElementById("img" + i);
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
