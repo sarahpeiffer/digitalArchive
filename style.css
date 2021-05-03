@@ -401,5 +401,18 @@ body {
         margin-bottom: 100px;
     }
 
+    #back-top {
+        padding: 10px;
+        background-color: rgba(231,76,94,.3);
+        border: 3px solid #e9ecef;
+        border-radius: 8px;
+        margin-right: 20px;
+        float: right;
+
+    }
+    #back-top:hover {
+        background-color: white;
+    }
+
 
       
